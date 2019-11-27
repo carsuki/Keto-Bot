@@ -85,6 +85,7 @@ try:
     @bot.command(pass_context=True)
     async def changegame(ctx, *, text):
         await bot.change_presence(activity=discord.Game(name=(text)))
+        await ctx.send('done :zany_face:')
         print (f"{ctx.message.author.name} changed Keto's status in {ctx.guild.name}! ({ctx.message.content})")
     # Change Game
 
