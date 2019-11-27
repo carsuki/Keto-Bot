@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 import random
 import config
+import os
 
 from dotenv import load_dotenv
 
