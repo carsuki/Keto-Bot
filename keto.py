@@ -1,37 +1,28 @@
+# whoever put comments after parts of code, I hate you.
 import discord
 from discord.ext import commands
 import random
 import config
 
-ketobotlogo="""
- _  __    _        ____        _   
-| |/ /___| |_ ___ | __ )  ___ | |_ 
-| . // _ \ __/ _ \|  _ \ / _ \| __|
-| . \ __/ ||  (_) | |_) | (_) | |_ 
-|_|\_\___|\__\___/|____/ \___/ \__|
-"""
-print(ketobotlogo)
+print(config.ketobotlogo)
+print(config.versionnumber)
+print('------')
+print('Powered by Toilet Cat Technologies™')
 
 bot = commands.Bot(command_prefix=config.prefix)
 bot.remove_command("help")
  
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name=";help | Keylogging Keto"))
-    print('------')
-    print('Ready!')
-    print('------')
-    print('Logged in as:')
+    await bot.change_presence(activity=discord.Game(name=";help | Quotes are my passion"))
+    print('Bot Name:')
     print(bot.user.name)
     print('------')
-    print('Connected to:')
+    print('Servers:')
     for server in bot.guilds:
         print(' ')
         print(server.name)
         print(server.id)
-    print('------')
-    print('© Toilet Cat Technologies')
-    print('------')
  
 try:
     async def self_check(ctx):
@@ -46,9 +37,18 @@ try:
     async def quote(ctx):
         messages = quotes.keto
         await ctx.send(random.choice(messages))
-        print (f"{ctx.message.author.name} requested a quote in {ctx.guild.name}!")
+        print (f"{ctx.message.author.name} requested a keto quote in {ctx.guild.name}!")
     # Keto Quotes
- 
+    @bot.command(pass_context=true)
+    async def humanquote(ctx):
+        messages = quotes.human
+        await ctx.send(random.choice(messages))
+        print (f"{ctx.message.author.name} requested a human quote in {ctx.guild.name}!")
+    # inform people on proper spelling of quotes
+    @bot.command()
+    async def qoute(ctx):
+        await ctx.send('imagine not knowing how to spell quote lmao')
+        print (f"{ctx.message.author.name} can't spell quote!")
     @bot.command()
     async def help(ctx):
         embed=discord.Embed(title="Keto Bot", url="https://toilet.cat/", description="Quoting Keto since 2019.")
@@ -93,5 +93,5 @@ try:
 
 except:
     pass
-import config
-bot.run(config.token, bot=True)
+import token
+bot.run(token.token, bot=True)
