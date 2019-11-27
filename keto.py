@@ -54,6 +54,8 @@ try:
         embed.add_field(name="Send one of Keto's finest quotes.", value=";quote", inline=False)
         embed.add_field(name="Ask the magic 8-Ball a question.", value=";m8b [question]", inline=False)
         embed.add_field(name="Links the Keto Bot repository.", value=";github", inline=False)
+        embed.add_field(name="Make Keto say something. (Owner only)", value=";say", inline=False)
+        embed.add_field(name="Change the game status. (Owner only)", value=";changegame", inline=False)
         embed.set_footer(text="© Toilet Cat Technologies") 
         await ctx.send(embed=embed)
         print (f"{ctx.message.author.name} requested the help embed in {ctx.guild.name}!")
