@@ -15,6 +15,7 @@ bot.remove_command("help")
  
 @bot.event
 async def on_ready():
+    await bot.change_presence(activity=discord.Game(name=";help | Keylogging Keto"))
     print('------')
     print('Ready!')
     print('------')
@@ -77,6 +78,13 @@ try:
         await ctx.send('https://github.com/xstecky/Keto-Bot')
         print (f"{ctx.message.author.name} requested the GitHub URL in {ctx.guild.name}!")
     # GitHub
+
+    @commands.check(self_check)
+    @bot.command(pass_context=True)
+    async def changegame(ctx, *, text):
+        await bot.change_presence(activity=discord.Game(name=(text)))
+        print (f"{ctx.message.author.name} changed Keto's status in {ctx.guild.name}! ({ctx.message.content})")
+    # Change Game
 
 except:
     pass
