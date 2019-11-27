@@ -2,14 +2,16 @@ import discord
 from discord.ext import commands
 import random
 import config
- 
-print('  _  __    _        ____        _   ')
-print(' | |/ /___| |_ ___ | __ )  ___ | |_ ')
-print(' | . // _ \ __/ _ \|  _ \ / _ \| __|')
-print(' | . \ __/ ||  (_) | |_) | (_) | |_ ')
-print(' |_|\_\___|\__\___/|____/ \___/ \__|')
-print(' ')
- 
+
+ketobotlogo="""
+ _  __    _        ____        _   
+| |/ /___| |_ ___ | __ )  ___ | |_ 
+| . // _ \ __/ _ \|  _ \ / _ \| __|
+| . \ __/ ||  (_) | |_) | (_) | |_ 
+|_|\_\___|\__\___/|____/ \___/ \__|
+"""
+print(ketobotlogo)
+
 bot = commands.Bot(command_prefix=config.prefix)
 bot.remove_command("help")
  
