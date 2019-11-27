@@ -4,6 +4,11 @@ from discord.ext import commands
 import random
 import config
 
+from dotenv import load_dotenv
+
+load_dotenv()
+token = os.getenv('DISCORD_TOKEN')
+
 print(config.ketobotlogo)
 print(config.versionnumber)
 print('------')
@@ -93,5 +98,5 @@ try:
 
 except:
     pass
-import token
-bot.run(token.token, bot=True)
+
+bot.run(token, bot=True)
