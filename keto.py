@@ -105,6 +105,13 @@ try:
         print (f"{ctx.message.author.name} requested a Human quote in {ctx.guild.name}!")
     # Human Quotes
 
+    @bot.command(pass_context=True)
+    async def gaynasaquote(ctx):
+        messages = quotes.gaynasa
+        await ctx.send(random.choice(messages))
+        print (f"{ctx.message.author.name} requested a Gay Nasa quote in {ctx.guild.name}!")
+    # Gay Nasa Quotes
+
 except:
     pass
 import config
