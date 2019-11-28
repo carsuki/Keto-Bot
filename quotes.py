@@ -59,3 +59,7 @@ human = ["I don’t wanna give myself dev role because that’s gonna just make 
          "Thank you keto, very cool!", 
          "electra bootlooped my xs max help",
          "do you know what a pull request is, nigga?"]
+
+
+gaynasa = ["bruh wtf is non binary what are u hexadecimal?",
+          "imagine using a keyboard layout that isnt qwertyuiop"]
