@@ -7,7 +7,7 @@ import os
 
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(verbose=True)
 token = os.getenv('DISCORD_TOKEN')
 
 print(config.ketobotlogo)
