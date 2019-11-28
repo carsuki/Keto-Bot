@@ -43,7 +43,7 @@ try:
  
     @bot.command()
     async def help(ctx):
-        embed=discord.Embed(title="Keto Bot", url="https://toilet.cat/", description="Quoting Keto since 2019.")
+        embed=discord.Embed(title="Gordo Quotes", url="https://toilet.cat/", description="Quoting bitches since 2019.")
         embed.set_thumbnail(url="https://raw.githubusercontent.com/xstecky/Keto-Bot/master/ketoflake.png")
         embed.add_field(name="Send one of Keto's finest quotes.", value=";ketoquote", inline=False)
         embed.add_field(name="Send one of Human's finest quotes.", value=";humanquote", inline=False)
