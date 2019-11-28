@@ -45,7 +45,8 @@ try:
     async def help(ctx):
         embed=discord.Embed(title="Keto Bot", url="https://toilet.cat/", description="Quoting Keto since 2019.")
         embed.set_thumbnail(url="https://raw.githubusercontent.com/xstecky/Keto-Bot/master/ketoflake.png")
-        embed.add_field(name="Send one of Keto's finest quotes.", value=";quote", inline=False)
+        embed.add_field(name="Send one of Keto's finest quotes.", value=";ketoquote", inline=False)
+        embed.add_field(name="Send one of Human's finest quotes.", value=";humanquote", inline=False)
         embed.add_field(name="Ask the magic 8-Ball a question.", value=";m8b [question]", inline=False)
         embed.add_field(name="Links the Keto Bot repository.", value=";github", inline=False)
         embed.add_field(name="Make Keto say something. (Owner only)", value=";say [text]", inline=False)
@@ -91,7 +92,7 @@ try:
     # Debug
 
     @bot.command(pass_context=True)
-    async def quote(ctx):
+    async def ketoquote(ctx):
         messages = quotes.keto
         await ctx.send(random.choice(messages))
         print (f"{ctx.message.author.name} requested a quote in {ctx.guild.name}!")
