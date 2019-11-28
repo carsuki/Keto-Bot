@@ -95,14 +95,14 @@ try:
     async def ketoquote(ctx):
         messages = quotes.keto
         await ctx.send(random.choice(messages))
-        print (f"{ctx.message.author.name} requested a quote in {ctx.guild.name}!")
+        print (f"{ctx.message.author.name} requested a Keto quote in {ctx.guild.name}!")
     # Keto Quotes
 
     @bot.command(pass_context=True)
     async def humanquote(ctx):
         messages = quotes.human
         await ctx.send(random.choice(messages))
-        print (f"{ctx.message.author.name} requested a human quote in {ctx.guild.name}!")
+        print (f"{ctx.message.author.name} requested a Human quote in {ctx.guild.name}!")
     # Human Quotes
 
 except:
