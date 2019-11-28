@@ -63,3 +63,12 @@ human = ["I don’t wanna give myself dev role because that’s gonna just make 
 
 gaynasa = ["bruh wtf is non binary what are u hexadecimal?",
           "imagine using a keyboard layout that isnt qwertyuiop"]
+
+gordo = ["Can we warn this guy ?",
+        "DDLC-IOS > ShortLook",
+        "Kanye is the most influencial artist of our generation !",
+        "Link of BetterDiscord Windows",
+        "im going to sleep 1 more hour. Dont wake me up",
+        "how is this allowed in here?",
+        "I hate that Dieter guys",
+        "@AppleBetas Who are you ?"]
